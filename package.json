@@ -1,0 +1,44 @@
+{
+  "name": "cw-youtube-transcript",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Robert Shaw",
+    "url": "https://robertshaw.id"
+  },
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --port 7878",
+    "test": "vitest",
+    "serve:test": "serve test -p 1234"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240423.0",
+    "@types/he": "^1.2.3",
+    "@types/lodash-es": "^4.17.12",
+    "@types/youtube-captions-scraper": "^1.0.0",
+    "serve": "^14.2.3",
+    "typescript": "^5.4.5",
+    "vite": "^4.5.3",
+    "vitest": "^0.34.6",
+    "wrangler": "^3.52.0"
+  },
+  "dependencies": {
+    "@egoist/youtube-transcript-plus": "^1.1.2",
+    "axios": "^1.13.2",
+    "dayjs": "^1.11.11",
+    "fast-xml-parser": "^5.3.3",
+    "file-extension": "^4.0.5",
+    "he": "^1.2.0",
+    "hono": "^4.2.8",
+    "html-entities": "^2.5.2",
+    "isomorphic-dompurify": "^1.13.0",
+    "lodash-es": "^4.17.21",
+    "tidy-url": "^1.16.0",
+    "top-user-agents": "^1.0.66",
+    "unique-random-array": "^3.0.0",
+    "youtube-caption-extractor": "^1.9.1",
+    "youtube-captions-scraper": "^2.0.3",
+    "zod": "^4.2.1"
+  }
+}
